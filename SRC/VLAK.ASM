@@ -1,33 +1,33 @@
 
-;DEBUG    EQU       1                        ; p©°znak testovac°ho m¢du
+;DEBUG    EQU       1                        ; p≈ô√≠znak testovac√≠ho m√≥du
 
-X        EQU       0bah                     ; k¢dovac° kl°á hesel
+X        EQU       0bah                     ; k√≥dovac√≠ kl√≠ƒç hesel
 
-MAXSCEN  EQU       50                       ; maxim†ln° á°slo scÇny
+MAXSCEN  EQU       50                       ; maxim√°ln√≠ ƒç√≠slo sc√©ny
 
-FRSTSCEN EQU       1                        ; inicializaán° scÇna
+FRSTSCEN EQU       1                        ; inicializaƒçn√≠ sc√©na
 
-DELKOBR  EQU       (16*16/8)*4              ; dÇlka jednoho obr†zku
+DELKOBR  EQU       (16*16/8)*4              ; d√©lka jednoho obr√°zku
 
-POCVECI  EQU       18                       ; poáet vàc°
+POCVECI  EQU       18                       ; poƒçet vƒõc√≠
 
 LOK      EQU       1                        ; lokomotiva
 LO1      EQU       LOK + 0                  ; lokomotiva VLEVO
 LO2      EQU       LOK + 1                  ; lokomotiva NAHORU
 LO3      EQU       LOK + 2                  ; lokomotiva VPRAVO
-LO4      EQU       LOK + 3                  ; lokomotiva DOL¶
+LO4      EQU       LOK + 3                  ; lokomotiva DOL≈Æ
 
 LO5      EQU       LOK + 4                  ; lokomotiva VLEVO
 LO6      EQU       LOK + 5                  ; lokomotiva NAHORU
 LO7      EQU       LOK + 6                  ; lokomotiva VPRAVO
-LO8      EQU       LOK + 7                  ; lokomotiva DOL¶
+LO8      EQU       LOK + 7                  ; lokomotiva DOL≈Æ
 
 LO9      EQU       LOK + 8                  ; lokomotiva VLEVO
 LOA      EQU       LOK + 9                  ; lokomotiva NAHORU
 LOB      EQU       LOK + 10                 ; lokomotiva VPRAVO
-LOC      EQU       LOK + 11                 ; lokomotiva DOL¶
+LOC      EQU       LOK + 11                 ; lokomotiva DOL≈Æ
 
-SRAZKA   EQU       LOK+12                   ; sr†ëka (10 f†z°)
+SRAZKA   EQU       LOK+12                   ; sr√°≈æka (10 f√°z√≠)
 SR1      EQU       SRAZKA+0
 SR2      EQU       SRAZKA+1
 SR3      EQU       SRAZKA+2
@@ -39,31 +39,31 @@ SR8      EQU       SRAZKA+7
 SR9      EQU       SRAZKA+8
 SRA      EQU       SRAZKA+9
 
-ZED      EQU       SRAZKA+10                ; zeÉ
+ZED      EQU       SRAZKA+10                ; zeƒè
 
-VRA      EQU       ZED+1                    ; vrata (6 f†z°)
+VRA      EQU       ZED+1                    ; vrata (6 f√°z√≠)
 
-VAGONY   EQU       VRA+6                    ; vagony (kaëdò vagon 4 smàry)
+VAGONY   EQU       VRA+6                    ; vagony (ka≈æd√Ω vagon 4 smƒõry)
 
-VECI     EQU       VAGONY + 4*POCVECI       ; vàci
+VECI     EQU       VAGONY + 4*POCVECI       ; vƒõci
 
 KRY      EQU       0  * 3 + VECI            ; 1: krystal
 KOR      EQU       1  * 3 + VECI            ; 2: koruna
 STO      EQU       2  * 3 + VECI            ; 3: strom
 JAB      EQU       3  * 3 + VECI            ; 4: jablko
-KRA      EQU       4  * 3 + VECI            ; 5: kr†va
-TRE      EQU       5  * 3 + VECI            ; 6: t©e®nà
-RYB      EQU       6  * 3 + VECI            ; 7: rybn°k
-ZIR      EQU       7  * 3 + VECI            ; 8: ëirafa
+KRA      EQU       4  * 3 + VECI            ; 5: kr√°va
+TRE      EQU       5  * 3 + VECI            ; 6: t≈ôe≈°nƒõ
+RYB      EQU       6  * 3 + VECI            ; 7: rybn√≠k
+ZIR      EQU       7  * 3 + VECI            ; 8: ≈æirafa
 ZMR      EQU       8  * 3 + VECI            ; 9: zmrzlina
 DOR      EQU       9  * 3 + VECI            ; 10: dort
-POC      EQU       10 * 3 + VECI            ; 11: poá°taá
+POC      EQU       10 * 3 + VECI            ; 11: poƒç√≠taƒç
 AUT      EQU       11 * 3 + VECI            ; 12: auto
-BAL      EQU       12 * 3 + VECI            ; 13: bal¢n
-BUD      EQU       13 * 3 + VECI            ; 14: bud°k
+BAL      EQU       12 * 3 + VECI            ; 13: bal√≥n
+BUD      EQU       13 * 3 + VECI            ; 14: bud√≠k
 SLO      EQU       14 * 3 + VECI            ; 15: slon
-VIN      EQU       15 * 3 + VECI            ; 16: v°no
-PEN      EQU       16 * 3 + VECI            ; 17: pen°ze
+VIN      EQU       15 * 3 + VECI            ; 16: v√≠no
+PEN      EQU       16 * 3 + VECI            ; 17: pen√≠ze
 LET      EQU       17 * 3 + VECI            ; 18: letadlo
 
 Code     SEGMENT
@@ -94,18 +94,18 @@ Start1:  mov       ax,0dh
 
 ; ------ demonstrace
 
-Start2: ; call      Clear                    ; vymaz†n° obrazovky
+Start2: ; call      Clear                    ; vymaz√°n√≠ obrazovky
          mov       al,0
-         call      InitScen                 ; inicializace scÇny AL (0=DEMO)
+         call      InitScen                 ; inicializace sc√©ny AL (0=DEMO)
          mov       byte ptr ds:[Demon],1    ; je demonstrace
          call      ClearInf
-         call      DispScen                 ; zobrazen° scÇny
+         call      DispScen                 ; zobrazen√≠ sc√©ny
          mov       byte ptr ds:[CitTit],0
 
          mov       si,offset DemoPos
 Start23:
-         call      TestTime                 ; inicializace á°taáe áasu
-         jc        Start3                   ; nen° krok
+         call      TestTime                 ; inicializace ƒç√≠taƒçe ƒçasu
+         jc        Start3                   ; nen√≠ krok
 
 ;         mov       ah,1
 ;         int       16h
@@ -117,9 +117,9 @@ Start23:
 ;         je        Start302
 ;
 ;Start232:
-         call      IncFaze                  ; zvò®en° f†ze
+         call      IncFaze                  ; zv√Ω≈°en√≠ f√°ze
 
-         call      OpenVrat                 ; otev©en° vrat
+         call      OpenVrat                 ; otev≈ôen√≠ vrat
 
          cmp       byte ptr ds:[Faze],0
          jne       Start3
@@ -168,19 +168,19 @@ Start38: call      SoundOff
 
          int       20h
 
-; ------ start scÇny
+; ------ start sc√©ny
 
 Start4:
-         mov       byte ptr ds:[Demon],0    ; nen° demonstrace
+         mov       byte ptr ds:[Demon],0    ; nen√≠ demonstrace
          mov       al,ds:[AktScen]
-         call      InitScen                 ; inicializace scÇny AL (0=DEMO)
+         call      InitScen                 ; inicializace sc√©ny AL (0=DEMO)
          call      DispScen
-         call      DispInf                  ; zobrazen° informaán°ho ©†dku
+         call      DispInf                  ; zobrazen√≠ informaƒçn√≠ho ≈ô√°dku
 
 Start41: call      FlushKey
 
-Start5:  call      TestTime                 ; inicializace á°taáe áasu
-         jc        Start5                   ; nen° krok
+Start5:  call      TestTime                 ; inicializace ƒç√≠taƒçe ƒçasu
+         jc        Start5                   ; nen√≠ krok
 
          mov       ah,1
          int       16h
@@ -204,9 +204,9 @@ Start531:mov       ah,0
 
 Start532:
 
-         call      IncFaze                  ; zvò®en° f†ze
+         call      IncFaze                  ; zv√Ω≈°en√≠ f√°ze
 
-         call      OpenVrat                 ; otev©en° vrat
+         call      OpenVrat                 ; otev≈ôen√≠ vrat
 
          cmp       byte ptr ds:[Faze],0
          jne       Start5
@@ -214,14 +214,14 @@ Start532:
 
 STart60: mov       ah,1
          int       16h
-         jz        Start69                  ; nen° kl†vesa
+         jz        Start69                  ; nen√≠ kl√°vesa
 
 Start603:mov       ah,0
          int       16h
 
          cmp       ax,3e00h
          jne       Start606
-         jmp       Heslo                    ; zad†n° hesla
+         jmp       Heslo                    ; zad√°n√≠ hesla
 
 Start606:
          or        ax,ax
@@ -249,28 +249,28 @@ Start64: cmp       ah,4dh
 
 Start65: cmp       ah,50h
          jne       Start60
-         mov       dx,1*256                 ; dolñ
+         mov       dx,1*256                 ; dol≈Ø
 
 Start652:cmp       dx,word ptr ds:[Smer]
-         je        Start60                  ; smàr je jië nastaven
-         mov       ds:[Smer],dx             ; novò smàr
+         je        Start60                  ; smƒõr je ji≈æ nastaven
+         mov       ds:[Smer],dx             ; nov√Ω smƒõr
 
 Start69: mov       dx,ds:[Smer]
          or        dx,dx
          jz        Start6
 
-; ------ test, zda vlak do nàáeho naraz°
+; ------ test, zda vlak do nƒõƒçeho naraz√≠
 
          push      dx
          add       dl,ds:[MapVlak+1]
          add       dh,ds:[MapVlak+2]
-         mov       al,20                    ; poáet pozic
-         mul       dh                       ; p©epoáet ©†dku na offset
+         mov       al,20                    ; poƒçet pozic
+         mul       dh                       ; p≈ôepoƒçet ≈ô√°dku na offset
          add       al,dl
          adc       ah,0
          add       ax,offset Pole
          xchg      ax,si                    ; SI <- adresa v poli
-         mov       al,ds:[si]               ; prvek na novÇ pozici
+         mov       al,ds:[si]               ; prvek na nov√© pozici
          pop       dx
 
          cmp       al,0
@@ -281,7 +281,7 @@ Start69: mov       dx,ds:[Smer]
          jbe       Start6a2
          cmp       al,VRA+6
          jb        Start6A
-Start6a2:jmp       Start8                   ; hav†rie
+Start6a2:jmp       Start8                   ; hav√°rie
 
 Start6A1:mov       word ptr ds:[AdrSound],offset TabSVec
          mov       word ptr ds:[CitSound],offset(TabSVec0-TabSVec) + 1
@@ -290,7 +290,7 @@ Start6A1:mov       word ptr ds:[AdrSound],offset TabSVec
 Start6A:
          mov       word ptr ds:[AdrSound],offset TabSLok
          mov       word ptr ds:[CitSound],offset(TabSLok0-TabSLok) + 1
-;˛
+;≈£
 Start6a4:call      PosVlak
 
          mov       dx,word ptr ds:[MapVlak+1]
@@ -299,7 +299,7 @@ Start6a4:call      PosVlak
 
 Start6:  jmp       Start5
 
-; ------ £spà®nÇ ukonáen° scÇny
+; ------ √∫spƒõ≈°n√© ukonƒçen√≠ sc√©ny
 
 Start7:
          mov       word ptr ds:[CitSound],0
@@ -327,7 +327,7 @@ Start711:call      SetSound
          cmp       byte ptr ds:[AktScen],MAXSCEN
          jbe       Start72
          mov       byte ptr ds:[AktScen],1
-         jmp       Absol                    ; absolutn° v°tàz hry
+         jmp       Absol                    ; absolutn√≠ v√≠tƒõz hry
 
 Start72:
          mov       dx,(24/2-1)*256+(40-10)/2
@@ -369,22 +369,22 @@ Start73: cld
          int       16h
 
          mov       al,ds:[AktScen]
-         call      InitScen                 ; inicializace scÇny AL
+         call      InitScen                 ; inicializace sc√©ny AL
 
          call      OpenScen
 
-         call      DispInf                  ; zobrazen° informaán°ho ©†dku
+         call      DispInf                  ; zobrazen√≠ informaƒçn√≠ho ≈ô√°dku
 
          jmp       Start41
 
 
-; ------ hav†rie
+; ------ hav√°rie
 
-Start8:  mov       byte ptr ds:[MapVlak],0  ; p©°znak sr†ëky
+Start8:  mov       byte ptr ds:[MapVlak],0  ; p≈ô√≠znak sr√°≈æky
 
-         mov       word ptr ds:[CitVyb],120  ; á°taá vòbuchu
+         mov       word ptr ds:[CitVyb],120  ; ƒç√≠taƒç v√Ωbuchu
 
-         mov       al,SR1                   ; sr†ëka
+         mov       al,SR1                   ; sr√°≈æka
 Start80: mov       dx,word ptr ds:[MapVlak+1]
          call      DispObr
 
@@ -437,9 +437,9 @@ Start82: call      FlushKey
 Start83: jmp       Start4
 
 ; -----------------------------------------------------------------------------
-;        celkovÇ ukonáen° hry - absolutn° v°tàz
+;        celkov√© ukonƒçen√≠ hry - absolutn√≠ v√≠tƒõz
 ; -----------------------------------------------------------------------------
-;˛
+;≈£
 Absol    PROC      NEAR
 
          mov       dx,9*256+5
@@ -465,20 +465,20 @@ Absol    PROC      NEAR
          call      FlushKey
          mov       ah,0
          int       16h
-         jmp       Start2                   ; n†vrat k demonstraci
+         jmp       Start2                   ; n√°vrat k demonstraci
 
 Absol    ENDP
 
 ; -----------------------------------------------------------------------------
-;        zad†n° hesla
+;        zad√°n√≠ hesla
 ; -----------------------------------------------------------------------------
-;˛
+;≈£
 Heslo    PROC      NEAR
 
          push      ds
          pop       es
 
-; ------ naáten° aktivn°ho hesla
+; ------ naƒçten√≠ aktivn√≠ho hesla
 
          mov       al,5
          mul       byte ptr ds:[AktScen]
@@ -489,7 +489,7 @@ Heslo    PROC      NEAR
          cld
          rep       movsb
 
-; ------ zobrazen° hesla
+; ------ zobrazen√≠ hesla
 
          mov       di,offset BuffHes        ; ukazatel v bufferu hesla
 
@@ -505,7 +505,7 @@ Heslo23: mov       ah,14
          jne       Heslo232
 
          mov       ah,9
-         mov       al,"€"
+         mov       al," "
          call      DispChr
          dec       dx
 
@@ -517,12 +517,12 @@ Heslo232:cld
          call      DispChr
          loop      Heslo23
 
-; ------ áek†n° na zad†n° kl†vesy
+; ------ ƒçek√°n√≠ na zad√°n√≠ kl√°vesy
 
-Heslo24: call      TestTime                 ; inicializace á°taáe áasu
-         jc        Heslo25                  ; nen° krok
-         call      IncFaze                  ; zvò®en° f†ze
-         call      OpenVrat                 ; otev©en° vrat
+Heslo24: call      TestTime                 ; inicializace ƒç√≠taƒçe ƒçasu
+         jc        Heslo25                  ; nen√≠ krok
+         call      IncFaze                  ; zv√Ω≈°en√≠ f√°ze
+         call      OpenVrat                 ; otev≈ôen√≠ vrat
 
 Heslo25: mov       ah,1
          int       16h
@@ -533,7 +533,7 @@ Heslo25: mov       ah,1
          cmp       al,13
          je        Heslo5
 
-; ------ p©eru®en° zad†n° ESC (nebo neplatnÇ heslo)
+; ------ p≈ôeru≈°en√≠ zad√°n√≠ ESC (nebo neplatn√© heslo)
 
          or        ax,ax
          jz        Heslo27
@@ -542,7 +542,7 @@ Heslo25: mov       ah,1
 
 Heslo27:
          call      DispInf
-         jmp       Start60                  ; p©eru®en° bez dal®° funkce
+         jmp       Start60                  ; p≈ôeru≈°en√≠ bez dal≈°√≠ funkce
 
 ; ------ kurzor vpravo
 
@@ -564,7 +564,7 @@ Heslo31: cmp       di,offset BuffHes
          dec       di
          jmp       short Heslo43
 
-; ------ vloëen° znaku
+; ------ vlo≈æen√≠ znaku
 
 Heslo32: cmp       al,"a"
          jb        Heslo33
@@ -583,10 +583,10 @@ Heslo42: cmp       di,offset BuffHes+4
          inc       di
 Heslo43: jmp       Heslo2
 
-; ------ ukonáen° zad†n° hesla ENTER
+; ------ ukonƒçen√≠ zad√°n√≠ hesla ENTER
 
 Heslo5:  mov       si,offset TabHesel
-         mov       dx,1                     ; ukazatel á°sla scÇny
+         mov       dx,1                     ; ukazatel ƒç√≠sla sc√©ny
          cld
 Heslo52: mov       di,offset BuffHes
          mov       cx,5
@@ -606,7 +606,7 @@ Heslo55: mov       ds:[AktScen],dl
 Heslo    ENDP
 
 ; -----------------------------------------------------------------------------
-;        uzav©en° scÇny
+;        uzav≈ôen√≠ sc√©ny
 ; -----------------------------------------------------------------------------
 
 ClosScen PROC      NEAR
@@ -628,7 +628,7 @@ ClosScn2:call      DispObr
 ClosScen ENDP
 
 ; -----------------------------------------------------------------------------
-;        otev©en° scÇny
+;        otev≈ôen√≠ sc√©ny
 ; -----------------------------------------------------------------------------
 
 OpenScen PROC      NEAR
@@ -652,7 +652,7 @@ OpenScn2:cld
 OpenScen ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° scÇny
+;        zobrazen√≠ sc√©ny
 ; -----------------------------------------------------------------------------
 
 DispScen PROC      NEAR
@@ -674,7 +674,7 @@ DispScn2:cld
 DispScen ENDP
 
 ; -----------------------------------------------------------------------------
-;        vymaz†n° informaán°ho ©†dku
+;        vymaz√°n√≠ informaƒçn√≠ho ≈ô√°dku
 ; -----------------------------------------------------------------------------
 
 ClearInf PROC      NEAR
@@ -689,14 +689,14 @@ ClearIn1:call      DispChr
 ClearInf ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° informaán°ho ©†dku
+;        zobrazen√≠ informaƒçn√≠ho ≈ô√°dku
 ; -----------------------------------------------------------------------------
 
 DispInf  PROC      NEAR
 
-         call      ClearInf                 ; vymaz†n° informaán°ho ©†dku
+         call      ClearInf                 ; vymaz√°n√≠ informaƒçn√≠ho ≈ô√°dku
 
-; ------ £vodn° text
+; ------ √∫vodn√≠ text
 
          mov       dx,24*256
          mov       ah,10
@@ -716,13 +716,13 @@ DispInf  PROC      NEAR
          mov       dl,40-2
          call      DispNum
 
-         call      DispSkor                 ; zobrazen° sk¢re
+         call      DispSkor                 ; zobrazen√≠ sk√≥re
          ret
 
 DispInf  ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° sk¢re
+;        zobrazen√≠ sk√≥re
 ; -----------------------------------------------------------------------------
 
 DispSkor PROC      NEAR
@@ -756,7 +756,7 @@ DispSko6:pop       dx
 DispSkor ENDP
 
 ; -----------------------------------------------------------------------------
-;        otev©en° vrat
+;        otev≈ôen√≠ vrat
 ; -----------------------------------------------------------------------------
 
 OpenVrat PROC      NEAR
@@ -770,8 +770,8 @@ OpenVrat PROC      NEAR
          jne       OpenVr8
 
          mov       dx,ds:[PozVrat]
-         mov       al,20                    ; poáet pozic
-         mul       dh                       ; p©epoáet ©†dku na offset
+         mov       al,20                    ; poƒçet pozic
+         mul       dh                       ; p≈ôepoƒçet ≈ô√°dku na offset
          add       al,dl
          adc       ah,0
          add       ax,offset Pole
@@ -783,7 +783,7 @@ OpenVrat PROC      NEAR
          jae       OpenVr8
 
          inc       ax
-         mov       ds:[si],al               ; nov† f†ze vrat
+         mov       ds:[si],al               ; nov√° f√°ze vrat
          call      DispObr
 
 OpenVr8: pop       si
@@ -795,23 +795,23 @@ OpenVr8: pop       si
 OpenVrat ENDP
 
 ; -----------------------------------------------------------------------------
-;        zvò®en° f†ze objektñ
+;        zv√Ω≈°en√≠ f√°ze objekt≈Ø
 ; -----------------------------------------------------------------------------
 
 IncFaze  PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      cx
          push      dx
          push      si
 
-; ------ obsluha objektñ
+; ------ obsluha objekt≈Ø
 
          mov       dh,0
          mov       si,offset Pole
-         inc       byte ptr ds:[Faze]       ; á°taá f†z°
+         inc       byte ptr ds:[Faze]       ; ƒç√≠taƒç f√°z√≠
          cmp       byte ptr ds:[Faze],3
          jb        IncFaze1
          mov       byte ptr ds:[Faze],0
@@ -834,7 +834,7 @@ IncFaze2:cld
          add       al,ah
          inc       ax
          jmp       short IncFaze4
-IncFaze3:inc       ax                       ; zvò®en° f†ze
+IncFaze3:inc       ax                       ; zv√Ω≈°en√≠ f√°ze
          cmp       byte ptr ds:[Faze],0
          jne       IncFaze4
          sub       al,3
@@ -847,7 +847,7 @@ IncFaze5:inc       dl
          cmp       dh,12
          jne       IncFaze1
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
          pop       si
          pop       dx
@@ -858,9 +858,9 @@ IncFaze5:inc       dl
 IncFaze  ENDP
 
 ; -----------------------------------------------------------------------------
-;        á°t†n° áasu pro jeden krok (CY=nen° krok)
+;        ƒç√≠t√°n√≠ ƒçasu pro jeden krok (CY=nen√≠ krok)
 ; -----------------------------------------------------------------------------
-;˛
+;≈£
 TestTime PROC      NEAR
 
          sti
@@ -906,21 +906,21 @@ ELSE
          cmp       ax,2                     ; krok
 ENDIF
 
-         jb        TestTim3                 ; nen° krok
-         add       ds:[LastTime],ax         ; zvò®en° á°taáe áasu
-         clc                                ; p©°znak kroku
+         jb        TestTim3                 ; nen√≠ krok
+         add       ds:[LastTime],ax         ; zv√Ω≈°en√≠ ƒç√≠taƒçe ƒçasu
+         clc                                ; p≈ô√≠znak kroku
 TestTim3:pop       ax
          ret
 
 TestTime ENDP
 
 ;; -----------------------------------------------------------------------------
-;;        vymaz†n° obrazovky
+;;        vymaz√°n√≠ obrazovky
 ;; -----------------------------------------------------------------------------
 ;
 ;Clear    PROC      NEAR
 ;
-;; ------ £schova registrñ
+;; ------ √∫schova registr≈Ø
 ;
 ;         push      ax
 ;         push      cx
@@ -928,7 +928,7 @@ TestTime ENDP
 ;         push      di
 ;         push      es
 ;
-;; ------ nastaven° z†pisovòch rovin
+;; ------ nastaven√≠ z√°pisov√Ωch rovin
 ;
 ;         mov       dx,3c4h
 ;         mov       al,2
@@ -937,7 +937,7 @@ TestTime ENDP
 ;         mov       al,0fh
 ;         out       dx,al
 ;
-;; ------ vymaz†n° videopamàti
+;; ------ vymaz√°n√≠ videopamƒõti
 ;
 ;         mov       ax,0a000h
 ;         mov       es,ax
@@ -946,7 +946,7 @@ TestTime ENDP
 ;         xor       ax,ax
 ;         rep       stosw
 ;
-;; ------ n†vrat registrñ
+;; ------ n√°vrat registr≈Ø
 ;
 ;         pop       es
 ;         pop       di
@@ -958,12 +958,12 @@ TestTime ENDP
 ;Clear    ENDP
 
 ; -----------------------------------------------------------------------------
-;        posun vlaku ve smàru DX (DH=0,1,-1, DL=0,1,-1)
+;        posun vlaku ve smƒõru DX (DH=0,1,-1, DL=0,1,-1)
 ; -----------------------------------------------------------------------------
 
 PosVlak  PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      bx
@@ -972,74 +972,74 @@ PosVlak  PROC      NEAR
          push      si
          push      di
 
-; ------ p©°prava registrñ
+; ------ p≈ô√≠prava registr≈Ø
 
          mov       si,offset MapVlak
-         add       dl,ds:[si+1]             ; nov† sou©adnice lokomotivy
+         add       dl,ds:[si+1]             ; nov√° sou≈ôadnice lokomotivy
          add       dh,ds:[si+2]
 
-; ------ posun sou©adnic objektu
+; ------ posun sou≈ôadnic objektu
 
-PosVlak2:mov       cx,ds:[si+1]             ; £schova staròch sou©adnic
-         mov       ds:[si+1],dx             ; nov† sou©adnice objektu
+PosVlak2:mov       cx,ds:[si+1]             ; √∫schova star√Ωch sou≈ôadnic
+         mov       ds:[si+1],dx             ; nov√° sou≈ôadnice objektu
 
-; ------ stanoven° novÇ f†ze objektu
+; ------ stanoven√≠ nov√© f√°ze objektu
 
-         mov       al,ds:[si]               ; b†ze objektu
+         mov       al,ds:[si]               ; b√°ze objektu
          cmp       cl,-1
          jne       PosVlk22
          add       al,bh
          jmp       short PosVlak4
-PosVlk22:mov       ah,dl                    ; nov† pozice
+PosVlk22:mov       ah,dl                    ; nov√° pozice
          mov       bh,0
          sub       ah,cl                    ; posun pozice
-         je        PosVlak3                 ; pozice se nezmànila
+         je        PosVlak3                 ; pozice se nezmƒõnila
          js        PosVlak4                 ; posun vlevo
          mov       bh,2
          add       al,2
          jmp       short PosVlak4           ; posun vpravo
 PosVlak3:inc       ax                       ; posun nahoru
          mov       bh,1
-         mov       ah,dh                    ; novò ©†dek
-         sub       ah,ch                    ; posun ©†dku
+         mov       ah,dh                    ; nov√Ω ≈ô√°dek
+         sub       ah,ch                    ; posun ≈ô√°dku
          js        PosVlak4                 ; je posun nahoru
-         add       al,2                     ; jinak posun dolñ
+         add       al,2                     ; jinak posun dol≈Ø
          mov       bh,3
 
-; ------ zobrazen° objektu na novÇ pozici
+; ------ zobrazen√≠ objektu na nov√© pozici
 
-PosVlak4:call      DispObr                  ; zobrazen° obr†zku
+PosVlak4:call      DispObr                  ; zobrazen√≠ obr√°zku
 
-; ------ uloëen° objektu do mapy
+; ------ ulo≈æen√≠ objektu do mapy
 
          push      ax
-         mov       al,20                    ; poáet pozic
-         mul       dh                       ; p©epoáet ©†dku na offset
+         mov       al,20                    ; poƒçet pozic
+         mul       dh                       ; p≈ôepoƒçet ≈ô√°dku na offset
          add       al,dl
          adc       ah,0
          add       ax,offset Pole
          xchg      ax,di                    ; DI <- adresa v poli
          pop       ax
-         xchg      al,ds:[di]               ; uloëen° objektu do mapy
+         xchg      al,ds:[di]               ; ulo≈æen√≠ objektu do mapy
 
-; ------ p©i zru®en° vàci vytvo©en° novÇho vagonu
+; ------ p≈ôi zru≈°en√≠ vƒõci vytvo≈ôen√≠ nov√©ho vagonu
 
-         sub       al,VECI                  ; byla to vàc ?
-         jb        PosVlak6                 ; nebyla to vàc
+         sub       al,VECI                  ; byla to vƒõc ?
+         jb        PosVlak6                 ; nebyla to vƒõc
 
-         dec       word ptr ds:[CitVeci]    ; á°t†n° vàc°
+         dec       word ptr ds:[CitVeci]    ; ƒç√≠t√°n√≠ vƒõc√≠
          cmp       byte ptr ds:[Demon],0
          jne       PosVla42
          cmp       word ptr ds:[Skore],-1
          je        PosVla41
          inc       word ptr ds:[Skore]
-PosVla41:call      DispSkor                 ; zobrazen° sk¢re
+PosVla41:call      DispSkor                 ; zobrazen√≠ sk√≥re
 PosVla42:mov       ah,0
          mov       bl,3
-         div       bl                       ; á°slo vàci
+         div       bl                       ; ƒç√≠slo vƒõci
          shl       al,1
          shl       al,1                     ; vagon * 4
-         add       al,VAGONY                ; á°slo vagonu
+         add       al,VAGONY                ; ƒç√≠slo vagonu
          push      si
 PosVlak5:add       si,3
          cmp       byte ptr ds:[si],0
@@ -1049,29 +1049,29 @@ PosVlak5:add       si,3
          mov       byte ptr ds:[si+3],0
          pop       si
 
-; ------ p©°prava pro dal®° objekt
+; ------ p≈ô√≠prava pro dal≈°√≠ objekt
 
-PosVlak6:add       si,3                     ; adresa dal®°ho objektu
-         mov       dx,cx                    ; star† pozice p©ede®lÇho objektu
+PosVlak6:add       si,3                     ; adresa dal≈°√≠ho objektu
+         mov       dx,cx                    ; star√° pozice p≈ôede≈°l√©ho objektu
          mov       al,0
-         cmp       ds:[si],al               ; je jië konec vlaku ?
+         cmp       ds:[si],al               ; je ji≈æ konec vlaku ?
          je        PosVlak7
-         jmp       PosVlak2                 ; nen° konec - dal®° vagon
+         jmp       PosVlak2                 ; nen√≠ konec - dal≈°√≠ vagon
 
-; ------ vymaz†n° posledn°ho vagonu
+; ------ vymaz√°n√≠ posledn√≠ho vagonu
 
 PosVlak7:cmp       dl,-1
          je        PosVlak8
-         call      DispObr                  ; vymaz†n° posledn°ho vagonu
-         mov       al,20                    ; poáet pozic
-         mul       dh                       ; p©epoáet ©†dku na offset
+         call      DispObr                  ; vymaz√°n√≠ posledn√≠ho vagonu
+         mov       al,20                    ; poƒçet pozic
+         mul       dh                       ; p≈ôepoƒçet ≈ô√°dku na offset
          add       al,dl
          adc       ah,0
          add       ax,offset Pole
          xchg      ax,di                    ; DI <- adresa v poli
          mov       byte ptr ds:[di],0
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
 PosVlak8:pop       di
          pop       si
@@ -1084,14 +1084,14 @@ PosVlak8:pop       di
 PosVlak  ENDP
 
 ; -----------------------------------------------------------------------------
-;        inicializace scÇny AL pro hru
+;        inicializace sc√©ny AL pro hru
 ; -----------------------------------------------------------------------------
 
 InitScen PROC      NEAR
 
          call      CekInit                  ; inicializace hodin
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      cx
@@ -1099,20 +1099,20 @@ InitScen PROC      NEAR
          push      si
          push      di
 
-; ------ p©enesen° definice scÇny
+; ------ p≈ôenesen√≠ definice sc√©ny
 
          cld
          mov       ah,0
-         mov       cx,12*20                 ; dÇlka definice jednÇ scÇny
-         mul       cx                       ; offset definice scÇny
-         add       ax,offset Sceny          ; adresa definice scÇny
-         xchg      ax,si                    ; SI <- adresa definice scÇny
-         mov       di,offset Pole           ; zaá†tek pole
-         rep       movsb                    ; p©enos pole
+         mov       cx,12*20                 ; d√©lka definice jedn√© sc√©ny
+         mul       cx                       ; offset definice sc√©ny
+         add       ax,offset Sceny          ; adresa definice sc√©ny
+         xchg      ax,si                    ; SI <- adresa definice sc√©ny
+         mov       di,offset Pole           ; zaƒç√°tek pole
+         rep       movsb                    ; p≈ôenos pole
 
          mov       word ptr ds:[CitVeci],0
 
-; ------ inicializace scÇny
+; ------ inicializace sc√©ny
 
          mov       dh,0
          mov       si,offset Pole
@@ -1130,9 +1130,9 @@ InitScn6:cmp       al,LO1
          jb        InitScn7
          cmp       al,LO4
          ja        InitScn7
-         mov       ds:[MapVlak],al          ; typ lokomotivy (smàr)
-         mov       word ptr ds:[MapVlak+1],dx ; sou©adnice lokomotivy
-         mov       byte ptr ds:[MapVlak+3],0  ; oznaáen° konce vlaku
+         mov       ds:[MapVlak],al          ; typ lokomotivy (smƒõr)
+         mov       word ptr ds:[MapVlak+1],dx ; sou≈ôadnice lokomotivy
+         mov       byte ptr ds:[MapVlak+3],0  ; oznaƒçen√≠ konce vlaku
 InitScn7:inc       dl
          cmp       dl,20
          jne       InitScn5
@@ -1140,11 +1140,11 @@ InitScn7:inc       dl
          cmp       dh,12
          jne       InitScn4
 
-         mov       byte ptr ds:[MapVlak],LO1 ; b†ze lokomotivy
-         mov       byte ptr ds:[Faze],0     ; ukazatel f†ze
+         mov       byte ptr ds:[MapVlak],LO1 ; b√°ze lokomotivy
+         mov       byte ptr ds:[Faze],0     ; ukazatel f√°ze
          mov       word ptr ds:[Smer],0
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
          pop       di
          pop       si
@@ -1156,12 +1156,12 @@ InitScn7:inc       dl
 InitScen ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° obr†zku AL na pozici DL, ©†dek DH
+;        zobrazen√≠ obr√°zku AL na pozici DL, ≈ô√°dek DH
 ; -----------------------------------------------------------------------------
 
 DispObr  PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      cx
@@ -1170,55 +1170,55 @@ DispObr  PROC      NEAR
          push      di
          push      es
 
-; ------ vòpoáet adresy obr†zku
+; ------ v√Ωpoƒçet adresy obr√°zku
 
          mov       ah,0
-         mov       cl,7                     ; poáet rotac°
-         shl       ax,cl                    ; offset obr†zku
-         add       ax,offset Obrazky        ; adresa obr†zku
-         xchg      ax,si                    ; SI <- adresa obr†zku
+         mov       cl,7                     ; poƒçet rotac√≠
+         shl       ax,cl                    ; offset obr√°zku
+         add       ax,offset Obrazky        ; adresa obr√°zku
+         xchg      ax,si                    ; SI <- adresa obr√°zku
 
-; ------ adresa k uloëen° obr†zku
+; ------ adresa k ulo≈æen√≠ obr√°zku
 
-         mov       cx,dx                    ; £schova DX
+         mov       cx,dx                    ; √∫schova DX
          mov       dl,dh
          mov       dh,0
-         mov       ax,16*40                 ; offset ©†dku
-         mul       dx                       ; p©epoáet ©†dku na offset
+         mov       ax,16*40                 ; offset ≈ô√°dku
+         mul       dx                       ; p≈ôepoƒçet ≈ô√°dku na offset
          mov       ch,0
-         shl       cx,1                     ; p©epoáet pozice na offset
-         add       ax,cx                    ; adresa ve videopamàti
-         xchg      ax,di                    ; DI <- adresa ve videopamàti
+         shl       cx,1                     ; p≈ôepoƒçet pozice na offset
+         add       ax,cx                    ; adresa ve videopamƒõti
+         xchg      ax,di                    ; DI <- adresa ve videopamƒõti
          mov       ax,0a000h
-         mov       es,ax                    ; ES <- adresa ve videopamàti
+         mov       es,ax                    ; ES <- adresa ve videopamƒõti
 
-; ------ p©°prava k zobrazen° obr†zku
+; ------ p≈ô√≠prava k zobrazen√≠ obr√°zku
 
          mov       dx,3c4h
          mov       al,2
-         out       dx,al                    ; volba registru z†pisovòch rovin
-         mov       ah,1                     ; ukazatel z†pisovÇ roviny
+         out       dx,al                    ; volba registru z√°pisov√Ωch rovin
+         mov       ah,1                     ; ukazatel z√°pisov√© roviny
          inc       dx
          cld
 
-; ------ zobrazen° jednÇ roviny obr†zku
+; ------ zobrazen√≠ jedn√© roviny obr√°zku
 
 DispObr2:mov       al,ah
-         out       dx,al                    ; volba z†pisovÇ roviny
-         mov       cx,16                    ; poáet linek
+         out       dx,al                    ; volba z√°pisov√© roviny
+         mov       cx,16                    ; poƒçet linek
          push      di
-DispObr3:movsw                              ; p©enos jednÇ linky
+DispObr3:movsw                              ; p≈ôenos jedn√© linky
          add       di,40-2
          loop      DispObr3
          pop       di
 
-; ------ p©°prava pro dal®° rovinu
+; ------ p≈ô√≠prava pro dal≈°√≠ rovinu
 
          shl       ah,1
          cmp       ah,10h
-         jne       DispObr2                 ; dal®° rovina
+         jne       DispObr2                 ; dal≈°√≠ rovina
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
          pop       es
          pop       di
@@ -1231,12 +1231,12 @@ DispObr3:movsw                              ; p©enos jednÇ linky
 DispObr  ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° titulku
+;        zobrazen√≠ titulku
 ; -----------------------------------------------------------------------------
 
 DispTit  PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      cx
@@ -1245,24 +1245,24 @@ DispTit  PROC      NEAR
          push      di
          push      es
 
-; ------ p©°prava k zobrazen° titulku
+; ------ p≈ô√≠prava k zobrazen√≠ titulku
 
          mov       si,offset Titulek
          mov       ax,0a000h
-         mov       es,ax                    ; ES <- adresa ve videopamàti
+         mov       es,ax                    ; ES <- adresa ve videopamƒõti
          mov       di,9*16*40+4
          mov       dx,3c4h
          mov       al,2
-         out       dx,al                    ; volba registru z†pisovòch rovin
-         mov       ah,1                     ; ukazatel z†pisovÇ roviny
+         out       dx,al                    ; volba registru z√°pisov√Ωch rovin
+         mov       ah,1                     ; ukazatel z√°pisov√© roviny
          inc       dx
          cld
 
-; ------ zobrazen° jednÇ roviny titulku
+; ------ zobrazen√≠ jedn√© roviny titulku
 
 DispTit2:mov       al,ah
-         out       dx,al                    ; volba z†pisovÇ roviny
-         mov       cx,16                    ; poáet linek
+         out       dx,al                    ; volba z√°pisov√© roviny
+         mov       cx,16                    ; poƒçet linek
 
          push      di
          push      si
@@ -1272,7 +1272,7 @@ DispTit3:push      cx
          push      di
 
          mov       cl,ds:[CitTit]
-         rep       movsb                    ; p©enos jednÇ linky
+         rep       movsb                    ; p≈ôenos jedn√© linky
 
          pop       di
          pop       si
@@ -1285,14 +1285,14 @@ DispTit3:push      cx
          pop       si
          pop       di
 
-; ------ p©°prava pro dal®° rovinu
+; ------ p≈ô√≠prava pro dal≈°√≠ rovinu
 
          add       si,16*32
          shl       ah,1
          cmp       ah,10h
-         jne       DispTit2                 ; dal®° rovina
+         jne       DispTit2                 ; dal≈°√≠ rovina
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
          pop       es
          pop       di
@@ -1305,12 +1305,12 @@ DispTit3:push      cx
 DispTit  ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° á°sla AX (pozice DL, ©†dek DH, barva CH)
+;        zobrazen√≠ ƒç√≠sla AX (pozice DL, ≈ô√°dek DH, barva CH)
 ; -----------------------------------------------------------------------------
 
 DispNum  PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      bx
@@ -1318,10 +1318,10 @@ DispNum  PROC      NEAR
          push      si
          push      di
 
-         mov       bx,dx                    ; £schova pozice
-         xor       di,di                    ; á°taá znakñ
+         mov       bx,dx                    ; √∫schova pozice
+         xor       di,di                    ; ƒç√≠taƒç znak≈Ø
 
-; ------ dek¢dov†n° á°sla do z†sobn°ku
+; ------ dek√≥dov√°n√≠ ƒç√≠sla do z√°sobn√≠ku
 
          mov       si,10
 DispNum1:xor       dx,dx
@@ -1340,7 +1340,7 @@ DispNum1:xor       dx,dx
 ;         dec       cl
 ;         jnz       DispNum2
 
-; ------ zobrazen° á°sla
+; ------ zobrazen√≠ ƒç√≠sla
 
 DispNum3:pop       ax
          add       al,"0"
@@ -1349,7 +1349,7 @@ DispNum3:pop       ax
          dec       di
          jnz       DispNum3
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
          pop       di
          pop       si
@@ -1361,7 +1361,7 @@ DispNum3:pop       ax
 DispNum  ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° textu SI (barva AH, pozice DL, ©†dek DH)
+;        zobrazen√≠ textu SI (barva AH, pozice DL, ≈ô√°dek DH)
 ; -----------------------------------------------------------------------------
 
 DispTxt  PROC      NEAR
@@ -1378,12 +1378,12 @@ DispTxt2:ret
 DispTxt  ENDP
 
 ; -----------------------------------------------------------------------------
-;        zobrazen° znaku AX (pozice DL, ©†dek DH)
+;        zobrazen√≠ znaku AX (pozice DL, ≈ô√°dek DH)
 ; -----------------------------------------------------------------------------
 
 DispChr  PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      bx
@@ -1392,23 +1392,23 @@ DispChr  PROC      NEAR
          push      si
          push      di
 
-; ------ nastaven° kurzoru
+; ------ nastaven√≠ kurzoru
 
          push      ax
          mov       bh,0
          mov       ah,2
-         int       10h                      ; nastaven° kurzoru
+         int       10h                      ; nastaven√≠ kurzoru
          pop       ax
 
-; ------ zobrazen° znaku
+; ------ zobrazen√≠ znaku
 
          mov       bl,ah
          mov       bh,0
          mov       ah,9
          mov       cx,1
-         int       10h                      ; zobrazen° znaku
+         int       10h                      ; zobrazen√≠ znaku
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
          pop       di
          pop       si
@@ -1422,7 +1422,7 @@ DispChr  PROC      NEAR
 DispChr  ENDP
 
 ; -----------------------------------------------------------------------------
-;        nastaven° zvukovÇho gener†toru na AX
+;        nastaven√≠ zvukov√©ho gener√°toru na AX
 ; -----------------------------------------------------------------------------
 
 SetSound PROC      NEAR
@@ -1446,7 +1446,7 @@ SetSound PROC      NEAR
 SetSound ENDP
 
 ; -----------------------------------------------------------------------------
-;        vypnut° zvukovÇho gener†toru
+;        vypnut√≠ zvukov√©ho gener√°toru
 ; -----------------------------------------------------------------------------
 
 SoundOff PROC      NEAR
@@ -1461,14 +1461,14 @@ SoundOff PROC      NEAR
 SoundOff ENDP
 
 ; -----------------------------------------------------------------------------
-;        cejchov†n° hodin
+;        cejchov√°n√≠ hodin
 ; -----------------------------------------------------------------------------
-; VSTUP: DS=datovò segment
+; VSTUP: DS=datov√Ω segment
 ; -----------------------------------------------------------------------------
 
 CekInit  PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      bx
@@ -1477,7 +1477,7 @@ CekInit  PROC      NEAR
 
          push      ds
 
-; ------ p©°prava registrñ
+; ------ p≈ô√≠prava registr≈Ø
 
          sti
          xor       ax,ax                    ; AX <- 0
@@ -1485,36 +1485,36 @@ CekInit  PROC      NEAR
          xor       dx,dx                    ; DX <- 0
          mov       di,46ch
 
-; ------ áek†n° na zaá†tek impulsu hodin
+; ------ ƒçek√°n√≠ na zaƒç√°tek impulsu hodin
 
          mov       bx,ds:[di]
 CekInit1:cmp       bx,ds:[di]
-         je        CekInit1                 ; áek†n° na zaá†tek hodin
+         je        CekInit1                 ; ƒçek√°n√≠ na zaƒç√°tek hodin
 
-; ------ mà©en° áasu
+; ------ mƒõ≈ôen√≠ ƒçasu
 
          mov       bx,ds:[di]
-         EVEN                               ; zarovn†n° na sudou adresu
-CekInit2:add       ax,1                     ; á°taá nië®°ho slova áasu
-         adc       dx,0                     ; p©enos do vy®®°ho slova
-         cmp       bx,ds:[di]               ; byla zmàna ?
-         je        CekInit2                 ; áek†n° na zmànu hodin
+         EVEN                               ; zarovn√°n√≠ na sudou adresu
+CekInit2:add       ax,1                     ; ƒç√≠taƒç ni≈æ≈°√≠ho slova ƒçasu
+         adc       dx,0                     ; p≈ôenos do vy≈°≈°√≠ho slova
+         cmp       bx,ds:[di]               ; byla zmƒõna ?
+         je        CekInit2                 ; ƒçek√°n√≠ na zmƒõnu hodin
 
-; ------ vòpoáet konstanty
+; ------ v√Ωpoƒçet konstanty
 
-         mov       bx,55                    ; dàlitel
-         cmp       dx,bx                    ; p©eteáen° á°sla ?
-         jb        CekInit3                 ; nen° p©eteáen° á°sla
-         mov       dx,54                    ; omezen° á°sla
-CekInit3:div       bx                       ; vòpoáet konstanty
+         mov       bx,55                    ; dƒõlitel
+         cmp       dx,bx                    ; p≈ôeteƒçen√≠ ƒç√≠sla ?
+         jb        CekInit3                 ; nen√≠ p≈ôeteƒçen√≠ ƒç√≠sla
+         mov       dx,54                    ; omezen√≠ ƒç√≠sla
+CekInit3:div       bx                       ; v√Ωpoƒçet konstanty
          or        ax,ax                    ; je = 0 ?
-         jnz       CekInit4                 ; nen° = 0
+         jnz       CekInit4                 ; nen√≠ = 0
          inc       ax                       ; korekce na 1
 CekInit4:
          pop       ds
          mov       ds:[Cit1ms],ax           ; konstanta hodin
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
          pop       di
          pop       dx
@@ -1525,15 +1525,15 @@ CekInit4:
 CekInit  ENDP
 
 ; -----------------------------------------------------------------------------
-;        áek†n° na uplynut° zadanÇho áasu
+;        ƒçek√°n√≠ na uplynut√≠ zadan√©ho ƒçasu
 ; -----------------------------------------------------------------------------
-; VSTUP: CX=poëadovan† doba v milisekund†ch
-;        DS=datovò segment
+; VSTUP: CX=po≈æadovan√° doba v milisekund√°ch
+;        DS=datov√Ω segment
 ; -----------------------------------------------------------------------------
 
 Cekej    PROC      NEAR
 
-; ------ £schova registrñ
+; ------ √∫schova registr≈Ø
 
          push      ax
          push      bx
@@ -1541,24 +1541,24 @@ Cekej    PROC      NEAR
          push      dx
          push      di
 
-; ------ áek†n° po zadanou dobu
+; ------ ƒçek√°n√≠ po zadanou dobu
 
-         jcxz      Cekej9                   ; nen° ë†dnÇ áek†n°
+         jcxz      Cekej9                   ; nen√≠ ≈æ√°dn√© ƒçek√°n√≠
          mov       di,offset Cit1ms         ; konstanta hodin
-Cekej1:  xor       ax,ax                    ; nië®° slovo á°taáe hodin
-         xor       dx,dx                    ; vy®®° slovo á°taáe hodin
+Cekej1:  xor       ax,ax                    ; ni≈æ≈°√≠ slovo ƒç√≠taƒçe hodin
+         xor       dx,dx                    ; vy≈°≈°√≠ slovo ƒç√≠taƒçe hodin
 
-; ------ á°t†n° doby 1 ms
+; ------ ƒç√≠t√°n√≠ doby 1 ms
 
-         EVEN                               ; zarovn†n° na sudou adresu
-Cekej2:  add       ax,1                     ; á°taá nië®°ho slova áasu
-         adc       dx,0                     ; p©enos do vy®®°ho slova
-         cmp       ax,ds:[di]               ; dosaëeno doby 1 ms ?
-         jne       Cekej2                   ; á°t†n° doby 1 ms
+         EVEN                               ; zarovn√°n√≠ na sudou adresu
+Cekej2:  add       ax,1                     ; ƒç√≠taƒç ni≈æ≈°√≠ho slova ƒçasu
+         adc       dx,0                     ; p≈ôenos do vy≈°≈°√≠ho slova
+         cmp       ax,ds:[di]               ; dosa≈æeno doby 1 ms ?
+         jne       Cekej2                   ; ƒç√≠t√°n√≠ doby 1 ms
 
-         loop      Cekej1                   ; áek†n° na dal®° 1 ms
+         loop      Cekej1                   ; ƒçek√°n√≠ na dal≈°√≠ 1 ms
 
-; ------ n†vrat registrñ
+; ------ n√°vrat registr≈Ø
 
 Cekej9:  pop       di
          pop       dx
@@ -1570,7 +1570,7 @@ Cekej9:  pop       di
 Cekej    ENDP
 
 ; -----------------------------------------------------------------------------
-;        vypr†zdnàn° bufferu kl†vesnice
+;        vypr√°zdnƒõn√≠ bufferu kl√°vesnice
 ; -----------------------------------------------------------------------------
 
 FlushKey PROC      NEAR
@@ -1595,32 +1595,32 @@ FlushKey ENDP
 
 CardTxt  db        'Lituji, ale program vyzaduje grafikou kartu EGA nebo VGA !',13,10,'$'
 
-UvTxt    db        '…ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ  Zalibila se vam hra ? ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª',13,10
-         db        '∫ Pokud ano, darujte ji i svym znamym. Muzete ji i volne ∫',13,10
-         db        '∫ distribuovat se svymi programy, nebot je to FREEWARE ! ∫',13,10
-         db        '∫ Firma GOLEM bude potesena, budete-li se zajimat o jeji ∫',13,10
-         db        '∫ dalsi produkty. Hlavnimi kriterii nasich programu jsou ∫',13,10
-         db        '∫ nizka cena, minimalni naroky na pamet a misto na disku ∫',13,10
-         db        '∫ a predevsim jednoduchost obsluhy. Proto pouzivame jako ∫',13,10
-         db        '∫ nas hlavni programovaci jazyk assembler.  Seznamite-li ∫',13,10
-         db        '∫ se s nasimi produkty (ovladace narodniho prostredi pro ∫',13,10
-         db        '∫ displej, klavesnici, tiskarnu,  nadstavba systemu typu ∫',13,10
-         db        '∫ NORTON COMMANDER, editory,  antivirove programy,  hry, ∫',13,10
-         db        '∫ programy  pro  prenos  po seriove ci paralelni lince a ∫',13,10
-         db        '∫ desitky dalsich programu a utilit)  jsme  presvedceni, ∫',13,10
-         db        '∫ ze u nasich  produktu  jiz  zustanete.  Muzeme vas tez ∫',13,10
-         db        '∫ kompletne vybavit  veskerou pocitacovou technikou a to ∫',13,10
-         db        '∫ jiz od nejlevnejsi sestavy pocitace pripojitelne pouze ∫',13,10
-         db        '∫ k televizoru a pozdeji  rozsiritelne  na plnohodnotnou ∫',13,10
-         db        '∫ verzi bez financni ztraty.                             ∫',13,10
-         db        '∫                                                        ∫',13,10
-         db        '∫ Nase adresa: GOLEM, P.O.Box 66, 756 61 Roznov p. Radh. ∫',13,10
-         db        '»ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº',13,10
+UvTxt    db        ' ‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî  Zalibila se vam hra ? ‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî ',13,10
+         db        '  Pokud ano, darujte ji i svym znamym. Muzete ji i volne  ',13,10
+         db        '  distribuovat se svymi programy, nebot je to FREEWARE !  ',13,10
+         db        '  Firma GOLEM bude potesena, budete-li se zajimat o jeji  ',13,10
+         db        '  dalsi produkty. Hlavnimi kriterii nasich programu jsou  ',13,10
+         db        '  nizka cena, minimalni naroky na pamet a misto na disku  ',13,10
+         db        '  a predevsim jednoduchost obsluhy. Proto pouzivame jako  ',13,10
+         db        '  nas hlavni programovaci jazyk assembler.  Seznamite-li  ',13,10
+         db        '  se s nasimi produkty (ovladace narodniho prostredi pro  ',13,10
+         db        '  displej, klavesnici, tiskarnu,  nadstavba systemu typu  ',13,10
+         db        '  NORTON COMMANDER, editory,  antivirove programy,  hry,  ',13,10
+         db        '  programy  pro  prenos  po seriove ci paralelni lince a  ',13,10
+         db        '  desitky dalsich programu a utilit)  jsme  presvedceni,  ',13,10
+         db        '  ze u nasich  produktu  jiz  zustanete.  Muzeme vas tez  ',13,10
+         db        '  kompletne vybavit  veskerou pocitacovou technikou a to  ',13,10
+         db        '  jiz od nejlevnejsi sestavy pocitace pripojitelne pouze  ',13,10
+         db        '  k televizoru a pozdeji  rozsiritelne  na plnohodnotnou  ',13,10
+         db        '  verzi bez financni ztraty.                              ',13,10
+         db        '                                                          ',13,10
+         db        '  Nase adresa: GOLEM, P.O.Box 66, 756 61 Roznov p. Radh.  ',13,10
+         db        ' ‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî‚Äî ',13,10
          db        '$'
 
 BuffHes  db        '     '                  ; buffer hesla
 
-                                            ; posun p©i demonstraci
+                                            ; posun p≈ôi demonstraci
 DemoPos  db        19 dup(1,0)
          db        8 dup(0,-1)
          db        3 dup( 19 dup(-1,0), 0,1, 19 dup(1,0), 0,1)
@@ -1638,46 +1638,46 @@ Bla2Txt  db        '    B L A H O P R E J I  !    ',0
          db        '   Stal jste se absolutnim    ',0
          db        '      vitezem teto hry !      ',0
 
-; ------ áasovaá
+; ------ ƒçasovaƒç
 
-         EVEN                               ; zaá°n† na sudÇ adrese jako 0:46ch
+         EVEN                               ; zaƒç√≠n√° na sud√© adrese jako 0:46ch
 Cit1ms   dw        0                        ; konstanta pro dobu 1 ms
 
 AdrSound dw        0                        ; adresa zvuku
-CitSound dw        0                        ; á°taá dÇlky zvuku (0=nen°)
+CitSound dw        0                        ; ƒç√≠taƒç d√©lky zvuku (0=nen√≠)
 
-CitVyb   dw        0                        ; á°taá vòbuchu
+CitVyb   dw        0                        ; ƒç√≠taƒç v√Ωbuchu
 
 TabSLok  dw        166,254,365              ; zvuk lokomotivy
 TabSLok0 label     byte
 
-TabSVec  dw        400,600,800,1000,1200,1400,1600,1800,2000,1800,1600,1400,1200,1000,800,600,400,200 ; zvuk vàci
+TabSVec  dw        400,600,800,1000,1200,1400,1600,1800,2000,1800,1600,1400,1200,1000,800,600,400,200 ; zvuk vƒõci
 TabSVec0 label     byte
 
-Smer     dw        0                        ; smàr pohybu
+Smer     dw        0                        ; smƒõr pohybu
 
-Demon    db        0                        ; 1=p©°znak demonstrace
+Demon    db        0                        ; 1=p≈ô√≠znak demonstrace
 
-CitTit   db        0                        ; á°taá ®°©ky titulku
-CitVeci  dw        0                        ; á°taá vàc°
+CitTit   db        0                        ; ƒç√≠taƒç ≈°√≠≈ôky titulku
+CitVeci  dw        0                        ; ƒç√≠taƒç vƒõc√≠
 PozVrat  dw        0                        ; pozice vrat
-Skore    dw        0                        ; á°taá sk¢re
+Skore    dw        0                        ; ƒç√≠taƒç sk√≥re
 
-MapVlak  db        3 * 12*20 dup(0)         ; mapa celÇho vlaku
-                                            ;  0: (1) b†ze objektu (0=konec)
-                                            ;  1: (1) sou©adnice X
-                                            ;  2: (1) sou©adnice Y
+MapVlak  db        3 * 12*20 dup(0)         ; mapa cel√©ho vlaku
+                                            ;  0: (1) b√°ze objektu (0=konec)
+                                            ;  1: (1) sou≈ôadnice X
+                                            ;  2: (1) sou≈ôadnice Y
 
-LastTime dw        0                        ; uschovanò posledn° áas
+LastTime dw        0                        ; uschovan√Ω posledn√≠ ƒças
 
-Faze     db        0                        ; á°taá f†ze
+Faze     db        0                        ; ƒç√≠taƒç f√°ze
 
-Pole     db        12*20 dup(0)             ; hrac° pole
+Pole     db        12*20 dup(0)             ; hrac√≠ pole
 
-AktScen  db        FRSTSCEN                 ; aktivn° scÇna
+AktScen  db        FRSTSCEN                 ; aktivn√≠ sc√©na
 
 Sceny    label     byte
-INCLUDE  SCENY.ASM                          ; definice scÇn
+INCLUDE  SCENY.ASM                          ; definice sc√©n
 
 TabHesel label     byte                     ; tabulka hesel
          db        'G' XOR X,'O' XOR X,'L' XOR X,'E' XOR X,'M' XOR X ; 1
@@ -1731,9 +1731,9 @@ TabHesel label     byte                     ; tabulka hesel
          db        'D' XOR X,'U' XOR X,'K' XOR X,'E' XOR X,'N' XOR X ; 49
          db        'S' XOR X,'T' XOR X,'O' XOR X,'R' XOR X,'Y' XOR X ; 50
 
-Titulek  db        32*16*4 dup(?)           ; tituln° obr†zek
+Titulek  db        32*16*4 dup(?)           ; tituln√≠ obr√°zek
 
-Obrazky  label     byte                     ; obr†zky
+Obrazky  label     byte                     ; obr√°zky
 
 Code     ENDS
          END       Start

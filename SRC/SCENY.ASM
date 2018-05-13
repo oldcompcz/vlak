@@ -69,7 +69,7 @@ db ZED,  0,  0,ZED,  0,JAB,JAB,STO,JAB,ZED,JAB,STO,JAB,JAB,  0,ZED,  0,  0,  0,Z
 db ZED,  0,  0,ZED,JAB,JAB,STO,JAB,JAB,JAB,JAB,JAB,STO,JAB,JAB,ZED,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 5: KRèVA
+                                            ; 5: KR√ÅVA
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,  0,STO,STO,STO,STO,STO,STO,STO,STO,STO,STO,STO,STO,STO,STO,STO,STO,  0,ZED
@@ -83,7 +83,7 @@ db ZED,  0,  0,  0,  0,  0,  0,  0,  0,ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,Z
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,KOR,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 6: TûEõNâ
+                                            ; 6: T≈òE≈†Nƒö
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,KOR,  0,  0,  0,  0,  0,ZED
 db ZED,  0,  0,  0,  0,  0,  0,  0,TRE,TRE,TRE,  0,  0,ZED,  0,KRY,  0,  0,  0,ZED
@@ -97,7 +97,7 @@ db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,  0,KRY,  0,  0,  0,Z
 db VRA,  0,  0,STO,STO,STO,STO,STO,STO,STO,STO,STO,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 7: RYBNãK
+                                            ; 7: RYBN√çK
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,VRA,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
@@ -111,7 +111,7 @@ db ZED,  0,  0,  0,KRY,  0,  0,  0,STO,ZED,STO,  0,  0,  0,  0,KRA,  0,KRA,  0,Z
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 8: íIRAFA
+                                            ; 8: ≈ΩIRAFA
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,  0,  0,KRY,  0,ZED,ZED,ZED,ZED,  0,ZED,ZED,ZED,ZED,  0,KRY,  0,  0,  0,ZED
@@ -153,7 +153,7 @@ db ZED,  0,  0,STO,  0,ZED,  0,  0,ZED,KRY,ZED,  0,  0,ZED,  0,STO,  0,  0,  0,Z
 db ZED,  0,  0,STO,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,STO,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 11: POÄãTAÄ
+                                            ; 11: POƒå√çTAƒå
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,  0,  0,  0,  0,  0,  0,RYB,  0,ZED,ZED,  0,RYB,  0,  0,  0,  0,  0,  0,ZED
 db ZED,  0,  0,  0,  0,  0,  0,ZED,  0,POC,POC,  0,ZED,  0,  0,  0,  0,  0,  0,ZED
@@ -181,7 +181,7 @@ db ZED,  0,KRA,  0,ZED,AUT,AUT,AUT,AUT,  0,AUT,AUT,AUT,AUT,AUT,ZED,  0,KRA,  0,Z
 db ZED,  0,  0,  0,ZED,AUT,AUT,AUT,AUT,  0,AUT,AUT,AUT,AUT,AUT,ZED,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 13: BALïN
+                                            ; 13: BAL√ìN
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,ZED,ZMR,ZMR,ZED,ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,JAB,JAB,ZED
 db ZED,ZED,ZMR,ZMR,ZMR,ZED,  0,  0,  0,BAL,  0,  0,  0,  0,  0,  0,  0,JAB,JAB,ZED
@@ -195,7 +195,7 @@ db ZED,  0,  0,STO,ZED,ZED,ZED,KRY,  0,  0,KRY,  0,KRY,  0,KRY,  0,  0,JAB,JAB,Z
 db ZED,  0,KRA,ZED,ZED,  0,  0,  0,KRY,  0,  0,  0,AUT,AUT,AUT,  0,  0,JAB,JAB,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,VRA,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 14: BUDãK
+                                            ; 14: BUD√çK
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,BUD,BUD,BUD,  0,BUD,  0,BUD,  0,  0,BUD,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,  0,BUD,  0,  0,BUD,  0,BUD,  0,BUD,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
@@ -223,7 +223,7 @@ db ZED,  0,  0,  0,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,  0,  0,  0,Z
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 16: VãNO
+                                            ; 16: V√çNO
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,  0,  0,  0,  0,ZED,VIN,VIN,VIN,VIN,VIN,VIN,VIN,VIN,VIN,ZED,  0,  0,  0,ZED
@@ -237,7 +237,7 @@ db ZED,  0,  0,  0,  0,  0,  0,  0,  0,ZED,ZED,ZED,  0,  0,  0,  0,  0,  0,  0,Z
 db ZED,  0,  0,  0,  0,  0,  0,  0,KOR,KOR,KOR,KOR,KOR,  0,  0,  0,  0,  0,  0,ZED
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 17: PENãZE
+                                            ; 17: PEN√çZE
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,KRY,KOR,KRY,KOR,AUT,AUT,AUT,AUT,AUT,  0,  0,  0,  0,  0,  0,  0,  0,  0,ZED
 db ZED,KOR,KRY,KOR,KRY,ZED,ZED,ZED,ZED,PEN,ZED,ZED,ZED,ZED,ZED,  0,  0,  0,  0,ZED
@@ -433,7 +433,7 @@ db ZED,  0,  0,ZED,ZED,ZED,ZED,STO,STO,ZED,ZED,STO,STO,ZED,ZED,ZED,ZED,  0,  0,Z
 db ZED,LO3,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,VRA
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 
-                                            ; 31: (po©ad° ©†dkñ 3-5-2-5-3-1-4-5)
+                                            ; 31: (po≈ôad√≠ ≈ô√°dk≈Ø 3-5-2-5-3-1-4-5)
 db ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED
 db ZED,  0,KRY,  0,KRY,  0,KRY,  0,KRY,STO,STO,KRY,  0,KRY,  0,KRY,  0,KRY,  0,ZED
 db ZED,  0,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,ZED,  0,ZED

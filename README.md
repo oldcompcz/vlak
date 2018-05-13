@@ -2,6 +2,10 @@
 
 Game vlak.com from the legendary Czech author Miroslav Němeček.
 
+![VLAK.png](DOC/VLAK.png)
+
+See project [Wiki](https://github.com/oldcompcz/vlak/wiki)
+
 ## How to build
 
 First of all make sure you have correct environment:
