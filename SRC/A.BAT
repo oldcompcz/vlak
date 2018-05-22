@@ -1,6 +1,6 @@
 @echo off
 :start
-kontext vlak.asm #2 sceny.asm
+REM kontext vlak.asm #2 sceny.asm
 tasm vlak.asm vlak.obj /z/zi
 if errorlevel == 1 goto chyba
 tlink vlak.obj, vlak.com, vlak.map /t/l/v/s/m

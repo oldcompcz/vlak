@@ -8,4 +8,5 @@ RYBKA = 7    TROJA = 17     SLAVE = 27     HOROR = 37     STARK = 47
 KLAUN = 8    EMOCE = 18     FORTE = 28     GAPPA = 38     ZARAZ = 48
 BRAUN = 9    BASTL = 19     LUCIE = 29     RETAL = 39     DUKEN = 49
 WHITE = 10   ISLAM = 20     NATUR = 30     CLOCK = 40     STORY = 50
+OCOMP = 51
 

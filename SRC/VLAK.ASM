@@ -3,7 +3,7 @@
 
 X        EQU       0bah                     ; k¢dovac¡ kl¡‡ hesel
 
-MAXSCEN  EQU       50                       ; maxim ln¡ ‡¡slo sc‚ny
+MAXSCEN  EQU       51                       ; maxim ln¡ ‡¡slo sc‚ny
 
 FRSTSCEN EQU       1                        ; inicializa‡n¡ sc‚na
 
@@ -1730,6 +1730,7 @@ TabHesel label     byte                     ; tabulka hesel
          db        'Z' XOR X,'A' XOR X,'R' XOR X,'A' XOR X,'Z' XOR X ; 48
          db        'D' XOR X,'U' XOR X,'K' XOR X,'E' XOR X,'N' XOR X ; 49
          db        'S' XOR X,'T' XOR X,'O' XOR X,'R' XOR X,'Y' XOR X ; 50
+         db        'O' XOR X,'C' XOR X,'O' XOR X,'M' XOR X,'P' XOR X ; 51
 
 Titulek  db        32*16*4 dup(?)           ; tituln¡ obr zek
 
