@@ -8,7 +8,6 @@ Game vlak.com from the legendary Czech author [Miroslav Němeček](https://githu
 
 First of all make sure you have correct environment:
 
-* Run build within real DOS. For example DosBox does troubles with running bat files.
 * Make sure you have Turbo Assembler installed and you can run `tasm` and `tlink` at your computer.
 
 Building steps:

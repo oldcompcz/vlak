@@ -14,6 +14,6 @@ goto start
 del vlak.map
 del vlak.obj
 
-copy /b vlak.com + titulek.scr + nic.scr + ruzne.scr + vagony.scr + veci.scr vlak2.com
+copy /b vlak.com+titulek.scr+nic.scr+ruzne.scr+vagony.scr+veci.scr vlak2.com
 del vlak.com
 ren vlak2.com vlak.com
