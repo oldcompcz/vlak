@@ -21,3 +21,12 @@ Original file VLAK.COM was compressed by
 [ProComp](http://panda38.sweb.cz/download/ProComp.zip) utility and 
 protected againtst viruses by [Poj](http://panda38.sweb.cz/download/Poj.zip) 
 utility.  
+
+## How add new scene
+
+1. Clone repository `git clone https://github.com/oldcompcz/vlak` 
+1. Add new scene at the end of SCENY.ASM
+1. Open VLAK.ASM and do following:
+   1. Increase number of scenes at line 6
+   1. Add password for new scene at the end of the file (at about line 1733)
+1. Build project
